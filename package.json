@@ -1,0 +1,41 @@
+{
+  "name": "pixeltocode-backend",
+  "version": "1.0.0",
+  "description": "Backend for pixeltocode",
+  "main": "main.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node main.js",
+    "local-make": "knex migrate:make --env local",
+    "local-latest": "knex migrate:latest --env local",
+    "local-rollback": "knex migrate:rollback --env local",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinod Patidar",
+  "license": "",
+  "dependencies": {
+    "@sendgrid/mail": "^6.5.5",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.16.5",
+    "morgan": "^1.10.0",
+    "nodemon": "^1.19.4",
+    "objection": "^1.6.3",
+    "parse-error": "^0.2.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "pg": "^7.9.0",
+    "validator": "^10.11.0"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
